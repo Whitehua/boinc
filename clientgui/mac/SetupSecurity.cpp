@@ -1019,7 +1019,7 @@ setGroupForUser:
     if (err)
         return err;
 
-    sprintf(buf5, "%s:wheel", user_name);
+    sprintf(buf5, "%s:staff", user_name);
     err = DoSudoPosixSpawn(chownPath, buf5, buf2, NULL, NULL, NULL, NULL);
     if (err)
         return err;
